@@ -20,7 +20,11 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+<<<<<<< HEAD
     url(r'^rooms/', include('rooms.urls')),
+=======
+    url(r'^', include('rooms.urls'))
+>>>>>>> rooms
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
